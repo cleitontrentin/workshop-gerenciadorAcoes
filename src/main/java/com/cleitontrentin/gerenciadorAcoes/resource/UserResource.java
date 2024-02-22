@@ -1,6 +1,5 @@
 package com.cleitontrentin.gerenciadorAcoes.resource;
 
-import org.apache.catalina.connector.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +13,7 @@ public class UserResource {
 	
 	@GetMapping
 	public ResponseEntity<User> findAll(){
-		User u = new User(1L, "cleiton", "cleiton.trentin@gmail.com", "999566024", "123456");
+		User u = new User(1L, "cleiton", "cleiton.trentin@gmail.com", "999566024", "123");
 		return ResponseEntity.ok().body(u);
 	
 	}
